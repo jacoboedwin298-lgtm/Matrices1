@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    min-height:100vh;
+    padding:20px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:35px;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#cbd5e1;
+}
+
+.labels{
+    display:grid;
+    grid-template-columns:repeat(4,80px);
+    gap:12px;
+    justify-content:center;
+    margin-bottom:10px;
+    font-weight:bold;
+    text-align:center;
+    color:#94a3b8;
+}
+
+.matrix{
+    display:grid;
+    grid-template-columns:repeat(4,80px);
+    gap:12px;
+    justify-content:center;
+    margin-bottom:25px;
+}
+
+.matrix input{
+    width:80px;
+    height:60px;
+    border:none;
+    border-radius:15px;
+    text-align:center;
+    font-size:22px;
+    background:#e2e8f0;
+    color:#000;
+    font-weight:bold;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+button{
+    padding:15px 30px;
+    border:none;
+    border-radius:15px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.solve{
+    background:#22c55e;
+    color:white;
+}
+
+.solve:hover{
+    background:#16a34a;
+    transform:scale(1.05);
+}
+
+.clear{
+    background:#ef4444;
+    color:white;
+}
+
+.clear:hover{
+    background:#dc2626;
+    transform:scale(1.05);
+}
+
+.steps{
+    margin-top:40px;
+}
+
+.step{
+    background:#1e293b;
+    padding:20px;
+    border-radius:20px;
+    margin-bottom:25px;
+    box-shadow:0 0 15px rgba(0,0,0,0.4);
+}
+
+.step h2{
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+
+.matrix-display{
+    overflow-x:auto;
+}
+
+table{
+    border-collapse:collapse;
+    margin:auto;
+}
+
+td{
+    border:2px solid #38bdf8;
+    padding:12px 20px;
+    text-align:center;
+    font-size:22px;
+    min-width:70px;
+}
+
+.result{
+    margin-top:20px;
+    text-align:center;
+    font-size:25px;
+    color:#4ade80;
+    font-weight:bold;
+}

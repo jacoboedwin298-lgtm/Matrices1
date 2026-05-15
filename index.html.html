@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solver Matrices 3x4</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Solver Matrices 3x4</h1>
+
+  <p class="subtitle">
+    Método Gauss-Jordan paso a paso
+  </p>
+
+  <div class="labels">
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>Resultado</div>
+  </div>
+
+  <div class="matrix" id="matrixInputs"></div>
+
+  <div class="buttons">
+
+    <button class="solve" onclick="solveMatrix()">
+      Resolver
+    </button>
+
+    <button class="clear" onclick="clearMatrix()">
+      Limpiar
+    </button>
+
+  </div>
+
+  <div class="steps" id="steps"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
